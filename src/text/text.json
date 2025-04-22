@@ -1,0 +1,28 @@
+{
+	"startText": "🇺🇿: Assalomu alaykum, iltimos kontaktingizni yuboring.\n\n🇷🇺: Здравствуйте, пожалуйста, отправьте ваш контакт.\n\n🇬🇧: Hello, please send your contact.",
+	"sendContactBtn": "📞 Contact",
+	"chooseLangText": "🇺🇿: Assalomu alaykum, iltimos bot tilni tanlang.\n\n🇷🇺: Здравствуйте, пожалуйста, выберите язык.\n\n🇬🇧: Hello, please select a language.",
+
+	"notfoundPartnerText": "🇺🇿: Ma'lumot topilmadi.\n\n🇷🇺: Информация не найдена.\n\n🇬🇧: Information not found.",
+	"incorrectContactText": "🇺🇿: Noto'g'ri, davom etish uchun aynan pastdagi tugma orqali kontaktingizni yuboring..\n\n🇷🇺: Неверно, пожалуйста, отправьте свой контакт с помощью кнопки ниже, чтобы продолжить..\n\n🇬🇧Wrong, please send your contact via the button below to continue..",
+
+	"startTextUz": "Muvaffaqiyatli ro'yxatdan o'tdingiz.",
+	"startTextRu": "Вы успешно зарегистрировались.",
+	"startTextEng": "You have successfully registered.",
+
+	"balanceBtnUz": "💰 Mening balansim",
+	"balanceBtnRu": "💰 Мой баланс",
+	"balanceBtnEng": "💰 My balance",
+
+	"balanceTextUz": "💰 Mening Balans: %balance% so'm",
+	"balanceTextRu": "💰 Мой баланс: %balance% сум",
+	"balanceTextEng": "💰 My balance: %balance% sum",
+
+	"menuTextUz": "Menu",
+	"menuTextRu": "Меню",
+	"menuTextEng": "Menu",
+
+	"profitInfoTextUz": "<b>Sotib olindi: %method%</b>\n\nUser id: <b>%user_id%</b>\nSummasi: <b>%amount% so'm</b>\nFoyda: <b>%profit% so'm</b>\nSanasi: <b>%date%</b>",
+	"profitInfoTextRu": "<b>Куплено: %method%</b>\n\nИд пользователя: <b>%user_id%</b>\nСумма: <b>%amount% сум</b>\nПрибыль: <b>%profit% сум</b>\nДата: <b>%date%</b>",
+	"profitInfoTextEng": "<b>Purchased: %method%</b>\n\nUser id: <b>%user_id%</b>\nAmount: <b>%amount% soum</b>\nProfit: <b>%profit% soum</b>\nDate: <b>%date%</b>"
+}
