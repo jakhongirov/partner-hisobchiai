@@ -39,6 +39,8 @@ module.exports = {
             bot.sendMessage(foundPartner.chat_id, text)
          }
 
+         return res.status(200).json({ message: "OK" })
+
       } catch (error) {
          console.log(error);
          return res.status(500).json({
