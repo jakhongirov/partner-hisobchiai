@@ -13,7 +13,7 @@ module.exports = {
          const foundPartner = await model.foundPartner(partner_id)
          const foundCheck = await model.foundCheck(check_id)
 
-         if (foundPartner.bot_lang == 'uz') {
+         if (foundPartner.bot_lang == 'uz' && foundPartner.chat_id) {
             const text = localText.profitInfoTextUz
                .replace(/%method%/g, foundCheck.method)
                .replace(/%user_id%/g, foundCheck.user_id)
@@ -22,7 +22,7 @@ module.exports = {
                .replace(/%date%/g, formatDateAdvanced(foundCheck.create_at))
 
             bot.sendMessage(foundPartner.chat_id, text, { parse_mode: "HTML" })
-         } else if (foundPartner.bot_lang == 'ru') {
+         } else if (foundPartner.bot_lang == 'ru' && foundPartner.chat_id) {
             const text = localText.profitInfoTextRu
                .replace(/%method%/g, foundCheck.method)
                .replace(/%user_id%/g, foundCheck.user_id)
@@ -31,7 +31,7 @@ module.exports = {
                .replace(/%date%/g, formatDateAdvanced(foundCheck.create_at))
 
             bot.sendMessage(foundPartner.chat_id, text, { parse_mode: "HTML" })
-         } else if (foundPartner.bot_lang == 'eng') {
+         } else if (foundPartner.bot_lang == 'eng' && foundPartner.chat_id) {
             const text = localText.profitInfoTextEng
                .replace(/%method%/g, foundCheck.method)
                .replace(/%user_id%/g, foundCheck.user_id)
