@@ -1,7 +1,10 @@
 const model = require('./model')
 const { bot } = require('../../lib/bot')
 const localText = require('../../text/text.json')
-const { formatBalanceWithSpaces } = require('../../lib/functions')
+const {
+   formatBalanceWithSpaces,
+   formatDateAdvanced
+} = require('../../lib/functions')
 
 module.exports = {
    GET: async (req, res) => {
@@ -16,27 +19,27 @@ module.exports = {
                .replace(/%user_id%/g, foundCheck.user_id)
                .replace(/%amount%/g, formatBalanceWithSpaces(foundCheck.amount))
                .replace(/%profit%/g, formatBalanceWithSpaces(profit))
-               .replace(/%date%/g, foundCheck.date)
+               .replace(/%date%/g, formatDateAdvanced(foundCheck.create_at))
 
-            bot.sendMessage(foundPartner.chat_id, text)
+            bot.sendMessage(foundPartner.chat_id, text, { parse_mode: "HTML" })
          } else if (foundPartner.bot_lang == 'ru') {
             const text = localText.profitInfoTextRu
                .replace(/%method%/g, foundCheck.method)
                .replace(/%user_id%/g, foundCheck.user_id)
                .replace(/%amount%/g, formatBalanceWithSpaces(foundCheck.amount))
                .replace(/%profit%/g, formatBalanceWithSpaces(profit))
-               .replace(/%date%/g, foundCheck.date)
+               .replace(/%date%/g, formatDateAdvanced(foundCheck.create_at))
 
-            bot.sendMessage(foundPartner.chat_id, text)
+            bot.sendMessage(foundPartner.chat_id, text, { parse_mode: "HTML" })
          } else if (foundPartner.bot_lang == 'eng') {
             const text = localText.profitInfoTextEng
                .replace(/%method%/g, foundCheck.method)
                .replace(/%user_id%/g, foundCheck.user_id)
                .replace(/%amount%/g, formatBalanceWithSpaces(foundCheck.amount))
                .replace(/%profit%/g, formatBalanceWithSpaces(profit))
-               .replace(/%date%/g, foundCheck.date)
+               .replace(/%date%/g, formatDateAdvanced(foundCheck.create_at))
 
-            bot.sendMessage(foundPartner.chat_id, text)
+            bot.sendMessage(foundPartner.chat_id, text, { parse_mode: "HTML" })
          }
 
          return res.status(200).json({ message: "OK" })
