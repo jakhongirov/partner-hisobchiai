@@ -15,9 +15,17 @@ const foundPartner = (partner_id) => {
 const foundCheck = (check_id) => {
    const QUERY = `
       SELECT
-         *
+         c.user_id,
+         c.method,
+         c.amount,
+         c.create_at,
+         u.source
       FROM
-         checks
+         checks c
+      JOIN
+         users u
+      ON
+         c.user_id = u.chat_id
       WHERE
          id = $1;
    `;

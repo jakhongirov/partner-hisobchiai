@@ -22,7 +22,7 @@
 	"menuTextRu": "Меню",
 	"menuTextEng": "Menu",
 
-	"profitInfoTextUz": "<b>Sotib olindi: %method%</b>\n\nUser id: <b>%user_id%</b>\nSummasi: <b>%amount% so'm</b>\nFoyda: <b>%profit% so'm</b>\nSanasi: <b>%date%</b>",
-	"profitInfoTextRu": "<b>Куплено: %method%</b>\n\nИд пользователя: <b>%user_id%</b>\nСумма: <b>%amount% сум</b>\nПрибыль: <b>%profit% сум</b>\nДата: <b>%date%</b>",
-	"profitInfoTextEng": "<b>Purchased: %method%</b>\n\nUser id: <b>%user_id%</b>\nAmount: <b>%amount% soum</b>\nProfit: <b>%profit% soum</b>\nDate: <b>%date%</b>"
+	"profitInfoTextUz": "<b>Sotib olindi: %method%</b>\n\nUser id: <b>%user_id%</b>\nTeg: <b>%source%</b>\nSummasi: <b>%amount% so'm</b>\nFoyda: <b>%profit% so'm</b>\nSanasi: <b>%date%</b>",
+	"profitInfoTextRu": "<b>Куплено: %method%</b>\n\nИд пользователя: <b>%user_id%</b>\nТег: <b>%source%</b>\nСумма: <b>%amount% сум</b>\nПрибыль: <b>%profit% сум</b>\nДата: <b>%date%</b>",
+	"profitInfoTextEng": "<b>Purchased: %method%</b>\n\nUser id: <b>%user_id%</b>\nTag: <b>%source%</b>\nAmount: <b>%amount% soum</b>\nProfit: <b>%profit% soum</b>\nDate: <b>%date%</b>"
 }

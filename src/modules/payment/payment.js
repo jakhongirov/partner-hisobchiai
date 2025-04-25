@@ -17,6 +17,7 @@ module.exports = {
             const text = localText.profitInfoTextUz
                .replace(/%method%/g, foundCheck.method)
                .replace(/%user_id%/g, foundCheck.user_id)
+               .replace(/%source%/g, foundCheck.source)
                .replace(/%amount%/g, formatBalanceWithSpaces(foundCheck.amount))
                .replace(/%profit%/g, formatBalanceWithSpaces(profit))
                .replace(/%date%/g, formatDateAdvanced(foundCheck.create_at))
@@ -26,6 +27,7 @@ module.exports = {
             const text = localText.profitInfoTextRu
                .replace(/%method%/g, foundCheck.method)
                .replace(/%user_id%/g, foundCheck.user_id)
+               .replace(/%source%/g, foundCheck.source)
                .replace(/%amount%/g, formatBalanceWithSpaces(foundCheck.amount))
                .replace(/%profit%/g, formatBalanceWithSpaces(profit))
                .replace(/%date%/g, formatDateAdvanced(foundCheck.create_at))
@@ -35,6 +37,7 @@ module.exports = {
             const text = localText.profitInfoTextEng
                .replace(/%method%/g, foundCheck.method)
                .replace(/%user_id%/g, foundCheck.user_id)
+               .replace(/%source%/g, foundCheck.source)
                .replace(/%amount%/g, formatBalanceWithSpaces(foundCheck.amount))
                .replace(/%profit%/g, formatBalanceWithSpaces(profit))
                .replace(/%date%/g, formatDateAdvanced(foundCheck.create_at))
